@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -14,266 +14,85 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KKv-3l-Wss">
-                                <rect key="frame" x="16" y="112" width="288" height="348"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="J3M-l8-CXg">
+                                <rect key="frame" x="16" y="117" width="358" height="687"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cS-xP-8PX">
-                                        <rect key="frame" x="1" y="1" width="71" height="68.5"/>
-                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="35"/>
-                                        <state key="normal" title="AC"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQs-Ap-AB4">
-                                        <rect key="frame" x="73" y="1" width="70.5" height="68.5"/>
-                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="35"/>
-                                        <state key="normal" title="+/-"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8v-Ic-kfN">
-                                        <rect key="frame" x="144.5" y="1" width="71" height="68.5"/>
-                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="35"/>
-                                        <state key="normal" title="%"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tty-i4-rOd">
-                                        <rect key="frame" x="216.5" y="1" width="70.5" height="68.5"/>
-                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="35"/>
-                                        <state key="normal" title="/"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gbp-4b-8XP">
-                                        <rect key="frame" x="1" y="70.5" width="71" height="68.5"/>
-                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="35"/>
-                                        <state key="normal" title="7"/>
-                                        <connections>
-                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JLo-Ky-cC7"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vM-3F-FoH">
-                                        <rect key="frame" x="73" y="70.5" width="70.5" height="68.5"/>
-                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="35"/>
-                                        <state key="normal" title="8"/>
-                                        <connections>
-                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xoB-vI-jbT"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRQ-ZE-wcC">
-                                        <rect key="frame" x="144.5" y="70.5" width="71" height="68.5"/>
-                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="35"/>
-                                        <state key="normal" title="9"/>
-                                        <connections>
-                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bKi-oU-phX"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRC-jl-Heu">
-                                        <rect key="frame" x="216.5" y="70.5" width="70.5" height="68.5"/>
-                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="35"/>
-                                        <state key="normal" title="*"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fA6-zV-kkD">
-                                        <rect key="frame" x="1" y="140" width="71" height="68"/>
-                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="35"/>
-                                        <state key="normal" title="4"/>
-                                        <connections>
-                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ESJ-ts-nL0"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYg-Hc-mWH">
-                                        <rect key="frame" x="73" y="140" width="70.5" height="68"/>
-                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="35"/>
-                                        <state key="normal" title="5"/>
-                                        <connections>
-                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gaB-vm-b4f"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AdQ-SG-c29">
-                                        <rect key="frame" x="144.5" y="140" width="71" height="68"/>
-                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="35"/>
-                                        <state key="normal" title="6"/>
-                                        <connections>
-                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qAF-cZ-kw8"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Fc-67-tpT">
-                                        <rect key="frame" x="216.5" y="140" width="70.5" height="68"/>
-                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="35"/>
-                                        <state key="normal" title="-"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0s-gp-JdV">
-                                        <rect key="frame" x="1" y="209" width="71" height="68.5"/>
-                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="35"/>
-                                        <state key="normal" title="1"/>
-                                        <connections>
-                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jSf-S6-ROo"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQJ-xz-2Nu">
-                                        <rect key="frame" x="73" y="209" width="70.5" height="68.5"/>
-                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="35"/>
-                                        <state key="normal" title="2"/>
-                                        <connections>
-                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aUY-p5-yAa"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHv-6i-whu">
-                                        <rect key="frame" x="144.5" y="209" width="71" height="68.5"/>
-                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="35"/>
-                                        <state key="normal" title="3"/>
-                                        <connections>
-                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xzd-ug-I91"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pc8-vV-HzW">
-                                        <rect key="frame" x="216.5" y="209" width="70.5" height="68.5"/>
-                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="35"/>
-                                        <state key="normal" title="+"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4y-5X-8W9">
-                                        <rect key="frame" x="1" y="278.5" width="71" height="68.5"/>
-                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="35"/>
-                                        <state key="normal" title="⌘"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTK-Cq-Aka">
-                                        <rect key="frame" x="73" y="278.5" width="70.5" height="68.5"/>
-                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="35"/>
-                                        <state key="normal" title="0"/>
-                                        <connections>
-                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g3z-hb-vJY"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxu-0p-rJB">
-                                        <rect key="frame" x="144.5" y="278.5" width="71" height="68.5"/>
-                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="35"/>
-                                        <state key="normal" title=","/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGo-rg-GUm">
-                                        <rect key="frame" x="216.5" y="278.5" width="70.5" height="68.5"/>
-                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="35"/>
-                                        <state key="normal" title="="/>
-                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caQ-9G-wBC">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="104"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="90"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NFL-vN-uBe">
+                                        <rect key="frame" x="0.0" y="106" width="358" height="581"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDP-JH-sio">
+                                                <rect key="frame" x="8" y="8" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="9"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktd-XZ-e00">
+                                                <rect key="frame" x="46" y="8" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="9"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxz-id-O42">
+                                                <rect key="frame" x="84" y="8" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="9"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTF-15-CBA">
+                                                <rect key="frame" x="8" y="46" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="9"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nv9-9x-UMf">
+                                                <rect key="frame" x="46" y="46" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="9"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOm-29-un8">
+                                                <rect key="frame" x="84" y="46" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="9"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6UO-VF-4dp">
+                                                <rect key="frame" x="8" y="87" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="9"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0S-3g-qZM">
+                                                <rect key="frame" x="46" y="87" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="9"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTC-6R-3GD">
+                                                <rect key="frame" x="84" y="87" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="9"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="pc8-vV-HzW" firstAttribute="height" secondItem="8cS-xP-8PX" secondAttribute="height" id="0aP-Cz-skT"/>
-                                    <constraint firstItem="EQJ-xz-2Nu" firstAttribute="leading" secondItem="r0s-gp-JdV" secondAttribute="trailing" constant="1" id="0ia-X0-drj"/>
-                                    <constraint firstItem="cQs-Ap-AB4" firstAttribute="leading" secondItem="8cS-xP-8PX" secondAttribute="trailing" constant="1" id="1RE-yZ-kkB"/>
-                                    <constraint firstItem="M4y-5X-8W9" firstAttribute="top" secondItem="r0s-gp-JdV" secondAttribute="bottom" constant="1" id="1dJ-kT-GoW"/>
-                                    <constraint firstItem="oRQ-ZE-wcC" firstAttribute="leading" secondItem="0vM-3F-FoH" secondAttribute="trailing" constant="1" id="1xW-k4-9de"/>
-                                    <constraint firstAttribute="bottom" secondItem="QGo-rg-GUm" secondAttribute="bottom" constant="1" id="24E-zY-Ge5"/>
-                                    <constraint firstItem="Gbp-4b-8XP" firstAttribute="leading" secondItem="KKv-3l-Wss" secondAttribute="leading" constant="1" id="3D1-RZ-lWT"/>
-                                    <constraint firstItem="HTK-Cq-Aka" firstAttribute="top" secondItem="EQJ-xz-2Nu" secondAttribute="bottom" constant="1" id="3L9-MZ-eV4"/>
-                                    <constraint firstItem="rxu-0p-rJB" firstAttribute="width" secondItem="8cS-xP-8PX" secondAttribute="width" id="3S0-UR-w8G"/>
-                                    <constraint firstItem="0Fc-67-tpT" firstAttribute="top" secondItem="XRC-jl-Heu" secondAttribute="bottom" constant="1" id="4Nd-n0-8bj"/>
-                                    <constraint firstItem="cQs-Ap-AB4" firstAttribute="height" secondItem="8cS-xP-8PX" secondAttribute="height" id="4cZ-aT-RFq"/>
-                                    <constraint firstItem="PYg-Hc-mWH" firstAttribute="height" secondItem="8cS-xP-8PX" secondAttribute="height" id="51T-9P-6af"/>
-                                    <constraint firstItem="AdQ-SG-c29" firstAttribute="top" secondItem="oRQ-ZE-wcC" secondAttribute="bottom" constant="1" id="5bL-fc-bZG"/>
-                                    <constraint firstItem="M4y-5X-8W9" firstAttribute="leading" secondItem="KKv-3l-Wss" secondAttribute="leading" constant="1" id="6M9-ni-JGP"/>
-                                    <constraint firstItem="0vM-3F-FoH" firstAttribute="leading" secondItem="Gbp-4b-8XP" secondAttribute="trailing" constant="1" id="6Ov-gW-UTG"/>
-                                    <constraint firstItem="QGo-rg-GUm" firstAttribute="top" secondItem="pc8-vV-HzW" secondAttribute="bottom" constant="1" id="6xQ-7e-gk3"/>
-                                    <constraint firstItem="cQs-Ap-AB4" firstAttribute="top" secondItem="KKv-3l-Wss" secondAttribute="top" constant="1" id="7xv-81-iV8"/>
-                                    <constraint firstItem="rxu-0p-rJB" firstAttribute="height" secondItem="8cS-xP-8PX" secondAttribute="height" id="7z2-Mw-p7r"/>
-                                    <constraint firstItem="r0s-gp-JdV" firstAttribute="height" secondItem="8cS-xP-8PX" secondAttribute="height" id="8OY-ax-XkW"/>
-                                    <constraint firstItem="oRQ-ZE-wcC" firstAttribute="height" secondItem="8cS-xP-8PX" secondAttribute="height" id="9GJ-Yi-SdA"/>
-                                    <constraint firstItem="cQs-Ap-AB4" firstAttribute="width" secondItem="8cS-xP-8PX" secondAttribute="width" id="9wq-in-8On"/>
-                                    <constraint firstItem="K8v-Ic-kfN" firstAttribute="top" secondItem="KKv-3l-Wss" secondAttribute="top" constant="1" id="9x9-bX-QoD"/>
-                                    <constraint firstItem="0Fc-67-tpT" firstAttribute="height" secondItem="8cS-xP-8PX" secondAttribute="height" id="A8c-lv-dln"/>
-                                    <constraint firstItem="8cS-xP-8PX" firstAttribute="top" secondItem="KKv-3l-Wss" secondAttribute="top" constant="1" id="BDR-me-CrO"/>
-                                    <constraint firstItem="AdQ-SG-c29" firstAttribute="leading" secondItem="PYg-Hc-mWH" secondAttribute="trailing" constant="1" id="EJf-Yt-Bse"/>
-                                    <constraint firstItem="8cS-xP-8PX" firstAttribute="leading" secondItem="KKv-3l-Wss" secondAttribute="leading" constant="1" id="EWe-ZA-li3"/>
-                                    <constraint firstItem="tty-i4-rOd" firstAttribute="leading" secondItem="K8v-Ic-kfN" secondAttribute="trailing" constant="1" id="ExB-mN-cao"/>
-                                    <constraint firstItem="AdQ-SG-c29" firstAttribute="width" secondItem="8cS-xP-8PX" secondAttribute="width" id="FAV-xt-UnW"/>
-                                    <constraint firstItem="PYg-Hc-mWH" firstAttribute="width" secondItem="8cS-xP-8PX" secondAttribute="width" id="Gai-i8-v1T"/>
-                                    <constraint firstItem="XRC-jl-Heu" firstAttribute="top" secondItem="tty-i4-rOd" secondAttribute="bottom" constant="1" id="Hso-ed-ddU"/>
-                                    <constraint firstItem="RHv-6i-whu" firstAttribute="width" secondItem="8cS-xP-8PX" secondAttribute="width" id="I69-2D-lLg"/>
-                                    <constraint firstItem="oRQ-ZE-wcC" firstAttribute="width" secondItem="8cS-xP-8PX" secondAttribute="width" id="IP6-oe-OwF"/>
-                                    <constraint firstItem="tty-i4-rOd" firstAttribute="width" secondItem="8cS-xP-8PX" secondAttribute="width" id="JPX-Hw-1oO"/>
-                                    <constraint firstItem="K8v-Ic-kfN" firstAttribute="width" secondItem="8cS-xP-8PX" secondAttribute="width" id="KA3-kY-P6u"/>
-                                    <constraint firstItem="PYg-Hc-mWH" firstAttribute="top" secondItem="0vM-3F-FoH" secondAttribute="bottom" constant="1" id="NAh-br-XDI"/>
-                                    <constraint firstItem="0vM-3F-FoH" firstAttribute="height" secondItem="8cS-xP-8PX" secondAttribute="height" id="NOD-rW-GvI"/>
-                                    <constraint firstItem="EQJ-xz-2Nu" firstAttribute="width" secondItem="8cS-xP-8PX" secondAttribute="width" id="NY8-gT-FsZ"/>
-                                    <constraint firstItem="oRQ-ZE-wcC" firstAttribute="top" secondItem="K8v-Ic-kfN" secondAttribute="bottom" constant="1" id="NzW-pm-T1l"/>
-                                    <constraint firstItem="0Fc-67-tpT" firstAttribute="width" secondItem="8cS-xP-8PX" secondAttribute="width" id="OBj-0E-EAx"/>
-                                    <constraint firstItem="r0s-gp-JdV" firstAttribute="leading" secondItem="KKv-3l-Wss" secondAttribute="leading" constant="1" id="OUb-Jo-Bd0"/>
-                                    <constraint firstItem="fA6-zV-kkD" firstAttribute="top" secondItem="Gbp-4b-8XP" secondAttribute="bottom" constant="1" id="PFP-Fm-cXW"/>
-                                    <constraint firstItem="tty-i4-rOd" firstAttribute="top" secondItem="KKv-3l-Wss" secondAttribute="top" constant="1" id="PMf-Zc-Tdj"/>
-                                    <constraint firstItem="tty-i4-rOd" firstAttribute="height" secondItem="8cS-xP-8PX" secondAttribute="height" id="PfO-eL-WXX"/>
-                                    <constraint firstItem="fA6-zV-kkD" firstAttribute="width" secondItem="8cS-xP-8PX" secondAttribute="width" id="PrI-ha-FPc"/>
-                                    <constraint firstItem="EQJ-xz-2Nu" firstAttribute="top" secondItem="PYg-Hc-mWH" secondAttribute="bottom" constant="1" id="TLU-7r-KWi"/>
-                                    <constraint firstItem="Gbp-4b-8XP" firstAttribute="height" secondItem="8cS-xP-8PX" secondAttribute="height" id="UDc-GF-2Of"/>
-                                    <constraint firstItem="QGo-rg-GUm" firstAttribute="width" secondItem="8cS-xP-8PX" secondAttribute="width" id="UK6-Kr-hRp"/>
-                                    <constraint firstItem="RHv-6i-whu" firstAttribute="top" secondItem="AdQ-SG-c29" secondAttribute="bottom" constant="1" id="UUF-fd-nmN"/>
-                                    <constraint firstAttribute="trailing" secondItem="pc8-vV-HzW" secondAttribute="trailing" constant="1" id="VXh-be-ct0"/>
-                                    <constraint firstItem="XRC-jl-Heu" firstAttribute="leading" secondItem="oRQ-ZE-wcC" secondAttribute="trailing" constant="1" id="Vhq-Sq-qoT"/>
-                                    <constraint firstItem="AdQ-SG-c29" firstAttribute="height" secondItem="8cS-xP-8PX" secondAttribute="height" id="XXg-Yx-bDc"/>
-                                    <constraint firstItem="HTK-Cq-Aka" firstAttribute="height" secondItem="8cS-xP-8PX" secondAttribute="height" id="YmA-Wp-iTe"/>
-                                    <constraint firstItem="EQJ-xz-2Nu" firstAttribute="height" secondItem="8cS-xP-8PX" secondAttribute="height" id="Yr3-ZJ-jTH"/>
-                                    <constraint firstItem="HTK-Cq-Aka" firstAttribute="leading" secondItem="M4y-5X-8W9" secondAttribute="trailing" constant="1" id="ZnQ-sh-J0H"/>
-                                    <constraint firstItem="pc8-vV-HzW" firstAttribute="top" secondItem="0Fc-67-tpT" secondAttribute="bottom" constant="1" id="ary-Wx-dva"/>
-                                    <constraint firstItem="XRC-jl-Heu" firstAttribute="width" secondItem="8cS-xP-8PX" secondAttribute="width" id="awZ-Wq-bn0"/>
-                                    <constraint firstAttribute="bottom" secondItem="HTK-Cq-Aka" secondAttribute="bottom" constant="1" id="bTk-2w-Q9K"/>
-                                    <constraint firstAttribute="trailing" secondItem="QGo-rg-GUm" secondAttribute="trailing" constant="1" id="c8M-vA-061"/>
-                                    <constraint firstItem="fA6-zV-kkD" firstAttribute="height" secondItem="8cS-xP-8PX" secondAttribute="height" id="dBy-v8-YBd"/>
-                                    <constraint firstItem="RHv-6i-whu" firstAttribute="leading" secondItem="EQJ-xz-2Nu" secondAttribute="trailing" constant="1" id="em7-2l-qjP"/>
-                                    <constraint firstItem="r0s-gp-JdV" firstAttribute="width" secondItem="8cS-xP-8PX" secondAttribute="width" id="f8j-9U-z2v"/>
-                                    <constraint firstItem="QGo-rg-GUm" firstAttribute="leading" secondItem="rxu-0p-rJB" secondAttribute="trailing" constant="1" id="hnH-gw-xIb"/>
-                                    <constraint firstAttribute="trailing" secondItem="tty-i4-rOd" secondAttribute="trailing" constant="1" id="i5r-ov-DSZ"/>
-                                    <constraint firstItem="Gbp-4b-8XP" firstAttribute="top" secondItem="8cS-xP-8PX" secondAttribute="bottom" constant="1" id="iEr-uQ-jaQ"/>
-                                    <constraint firstItem="0vM-3F-FoH" firstAttribute="width" secondItem="8cS-xP-8PX" secondAttribute="width" id="kTV-nh-cwD"/>
-                                    <constraint firstItem="fA6-zV-kkD" firstAttribute="leading" secondItem="KKv-3l-Wss" secondAttribute="leading" constant="1" id="kcT-3j-h46"/>
-                                    <constraint firstItem="rxu-0p-rJB" firstAttribute="leading" secondItem="HTK-Cq-Aka" secondAttribute="trailing" constant="1" id="lf5-mF-LMA"/>
-                                    <constraint firstItem="XRC-jl-Heu" firstAttribute="height" secondItem="8cS-xP-8PX" secondAttribute="height" id="lgQ-8R-AtK"/>
-                                    <constraint firstItem="pc8-vV-HzW" firstAttribute="leading" secondItem="RHv-6i-whu" secondAttribute="trailing" constant="1" id="lj9-2B-s2W"/>
-                                    <constraint firstItem="rxu-0p-rJB" firstAttribute="top" secondItem="RHv-6i-whu" secondAttribute="bottom" constant="1" id="m1x-Jk-EWB"/>
-                                    <constraint firstItem="QGo-rg-GUm" firstAttribute="height" secondItem="8cS-xP-8PX" secondAttribute="height" id="oEN-Qk-Gyx"/>
-                                    <constraint firstItem="r0s-gp-JdV" firstAttribute="top" secondItem="fA6-zV-kkD" secondAttribute="bottom" constant="1" id="p8k-dW-1dX"/>
-                                    <constraint firstItem="PYg-Hc-mWH" firstAttribute="leading" secondItem="fA6-zV-kkD" secondAttribute="trailing" constant="1" id="pHO-UT-ehR"/>
-                                    <constraint firstAttribute="bottom" secondItem="M4y-5X-8W9" secondAttribute="bottom" constant="1" id="pdn-WN-8Fe"/>
-                                    <constraint firstItem="Gbp-4b-8XP" firstAttribute="width" secondItem="8cS-xP-8PX" secondAttribute="width" id="pmp-8v-y1i"/>
-                                    <constraint firstItem="pc8-vV-HzW" firstAttribute="width" secondItem="8cS-xP-8PX" secondAttribute="width" id="qy3-Qs-fng"/>
-                                    <constraint firstItem="HTK-Cq-Aka" firstAttribute="width" secondItem="8cS-xP-8PX" secondAttribute="width" id="rTo-ty-Sil"/>
-                                    <constraint firstAttribute="bottom" secondItem="rxu-0p-rJB" secondAttribute="bottom" constant="1" id="sPa-AB-bIB"/>
-                                    <constraint firstAttribute="trailing" secondItem="0Fc-67-tpT" secondAttribute="trailing" constant="1" id="trA-I8-g1u"/>
-                                    <constraint firstItem="M4y-5X-8W9" firstAttribute="width" secondItem="8cS-xP-8PX" secondAttribute="width" id="u0t-b8-dHT"/>
-                                    <constraint firstItem="0Fc-67-tpT" firstAttribute="leading" secondItem="AdQ-SG-c29" secondAttribute="trailing" constant="1" id="ucV-rV-1Sc"/>
-                                    <constraint firstItem="M4y-5X-8W9" firstAttribute="height" secondItem="8cS-xP-8PX" secondAttribute="height" id="udt-QN-5dV"/>
-                                    <constraint firstItem="RHv-6i-whu" firstAttribute="height" secondItem="8cS-xP-8PX" secondAttribute="height" id="v3Z-sP-grp"/>
-                                    <constraint firstItem="0vM-3F-FoH" firstAttribute="top" secondItem="cQs-Ap-AB4" secondAttribute="bottom" constant="1" id="vJv-nf-EbB"/>
-                                    <constraint firstItem="K8v-Ic-kfN" firstAttribute="height" secondItem="8cS-xP-8PX" secondAttribute="height" id="xxW-aF-dlr"/>
-                                    <constraint firstAttribute="trailing" secondItem="XRC-jl-Heu" secondAttribute="trailing" constant="1" id="yNd-FX-q3L"/>
-                                    <constraint firstItem="K8v-Ic-kfN" firstAttribute="leading" secondItem="cQs-Ap-AB4" secondAttribute="trailing" constant="1" id="z3l-m8-NEf"/>
-                                </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="IEB-z6-BPe">
-                                <rect key="frame" x="16" y="20" width="288" height="93"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="90"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="IEB-z6-BPe" secondAttribute="bottom" constant="367" id="13M-wO-A2t"/>
-                            <constraint firstItem="IEB-z6-BPe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="5Sh-5z-2Q6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IEB-z6-BPe" secondAttribute="bottom" constant="367" id="8uh-DI-grc"/>
-                            <constraint firstItem="IEB-z6-BPe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ARC-TK-zY8"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="IEB-z6-BPe" secondAttribute="bottom" constant="367" id="GCN-da-YCy"/>
-                            <constraint firstItem="IEB-z6-BPe" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="GLQ-lt-p9V"/>
-                            <constraint firstItem="IEB-z6-BPe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="OtT-lh-DyM"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="IEB-z6-BPe" secondAttribute="bottom" constant="367" id="PIP-aG-ZbB"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IEB-z6-BPe" secondAttribute="bottom" constant="367" id="bFj-RJ-lQY"/>
-                            <constraint firstItem="IEB-z6-BPe" firstAttribute="leading" secondItem="KKv-3l-Wss" secondAttribute="leading" id="hTg-fC-Dgu"/>
-                            <constraint firstItem="KKv-3l-Wss" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="112" id="mU3-YV-IAp"/>
-                            <constraint firstItem="IEB-z6-BPe" firstAttribute="trailing" secondItem="KKv-3l-Wss" secondAttribute="trailing" id="qKS-9C-b19"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KKv-3l-Wss" secondAttribute="bottom" constant="20" id="qrY-Ea-tL7"/>
-                            <constraint firstItem="IEB-z6-BPe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" symbolic="YES" id="v1d-La-ozX"/>
+                            <constraint firstItem="J3M-l8-CXg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="83k-51-pk6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J3M-l8-CXg" secondAttribute="trailing" constant="16" id="Yev-sT-ozy"/>
+                            <constraint firstItem="J3M-l8-CXg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="73" id="b9W-tB-w37"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="J3M-l8-CXg" secondAttribute="bottom" constant="6" id="glH-X1-HU2"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="displayResiltlabel" destination="IEB-z6-BPe" id="tof-pD-z5x"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="13.125" y="103.75"/>
+            <point key="canvasLocation" x="10.769230769230768" y="102.3696682464455"/>
         </scene>
     </scenes>
     <resources>

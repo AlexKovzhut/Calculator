@@ -8,17 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var resultLebel: UILabel!
     
-        
-    @IBAction func numberPressed(_ sender: UIButton) {
-        let number = sender.currentTitle!
-        
-        resultLebel.text = resultLebel.text! + number
-        
-    
-        
-    }
+  
     
 }
 
