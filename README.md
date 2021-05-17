@@ -1,2 +1,2 @@
 # Calculator
- Calculator study project
+Study project
